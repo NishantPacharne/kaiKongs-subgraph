@@ -1,0 +1,25 @@
+specVersion: 0.0.5
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: KKTEST
+    network: mumbai
+    source:
+      address: "0xe83a69C8CD50d681895602ACdEC81F7847E70fde"
+      abi: KKTEST
+      startBlock: 12404966
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Kong
+        - User
+      abis:
+        - name: KKTEST
+          file: KKTEST/abis/KKTEST.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+      file: KKTEST/KKTEST.wasm
