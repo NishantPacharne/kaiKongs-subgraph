@@ -1,5 +1,5 @@
 {
-  "name": "kktestv2",
+  "name": "kai-kongs-v2",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
