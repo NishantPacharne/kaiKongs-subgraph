@@ -6,7 +6,7 @@ dataSources:
     name: KKTEST
     network: mainnet
     source:
-      address: "0xe83a69C8CD50d681895602ACdEC81F7847E70fde"
+      address: "0xAAD46226270f7375E54612E5E91083656Ef970a8"
       abi: KKTEST
       startBlock: 12404966
     mapping:
